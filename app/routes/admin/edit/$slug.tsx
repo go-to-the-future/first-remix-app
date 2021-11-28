@@ -59,8 +59,8 @@ export default function PutSlug() {
         <p>
           <button type="submit">
           {transition.submission
-            ? "Creating..."
-            : "Create Post"}
+            ? "Editing.."
+            : "Edit Post"}
           </button>
         </p>
       </Form>
