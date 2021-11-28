@@ -18,14 +18,16 @@ export default function Admin() {
       <nav>
         <h1>Admin</h1>
         <ul>
-          {posts.map(post => (
+          {posts.map((post) => (
             <li key={post.slug}>
               <Link to={post.slug}>{post.title}</Link>
             </li>
           ))}
         </ul>
       </nav>
-      <main><Outlet /></main>
+      <main>
+        <Outlet />
+      </main>
     </div>
   );
 }
