@@ -1,3 +1,9 @@
+# What's this?
+
+This repository duplicated [Remix Developer Blog Tutorial](https://remix.run/docs/en/v1/tutorials/blog)
+Not only duplication But also Edit Page is here so that you can refer to this after the tutorial.
+
+# ↓default sentences
 # Welcome to Remix!
 
 - [Remix Docs](https://remix.run/docs)
