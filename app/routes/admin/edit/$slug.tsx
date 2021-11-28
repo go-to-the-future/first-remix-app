@@ -40,28 +40,27 @@ export default function PutSlug() {
   let errors = useActionData();
   let transition = useTransition();
 
-
   return (
     <>
-      <h1>Post Slug: {post.slug}</h1>
+      <h1>Edit Post : {post.slug}</h1>
       <Form method="post">
         <p>
           <label>
             Post Title: {errors?.title && <em>Title is required</em>}
-            <input type="text" name="title" />
+            <input type="text" name="title"  defaultValue={post.title}/>
           </label>
         </p>
         <input type="hidden" name="slug" value={post.slug}/>
         <p>
           <label htmlFor="markdown">Markdown:</label> {errors?.markdown && <em>Markdown is required</em>}
           <br />
-          <textarea rows={20} name="markdown" />
+          <textarea rows={20} name="markdown" defaultValue={post.body}/>
         </p>
         <p>
           <button type="submit">
           {transition.submission
-            ? "Editing..."
-            : "Edit Post"}
+            ? "Creating..."
+            : "Create Post"}
           </button>
         </p>
       </Form>
