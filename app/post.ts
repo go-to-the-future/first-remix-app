@@ -42,7 +42,7 @@ export async function getPost(slug: string) {
     `Post ${filepath} is missing attributes`
   );
   let html = marked(body);
-  return { slug, html, title: attributes.title };
+  return { slug, html, title: attributes.title, body };
 }
 
 export async function getPosts() {
